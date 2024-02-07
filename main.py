@@ -17,4 +17,5 @@ def creat_activity(message):
     activity = requests.get(url).json()
     bot.send_message(message.chat.id, activity["activity"])
 
+
 bot.infinity_polling()
